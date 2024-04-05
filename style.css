@@ -1,0 +1,135 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+#mainNavbar {
+  position: fixed;
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-bottom: solid;
+  border-color: black;
+  background-color: rgba(255, 255, 255, 0);
+  top: 1%;
+  left: 1%;
+  width: fit-content;
+}
+
+#mainNavbar .navbar-brand {
+  font-size: 2.1rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: left;
+  transform: skewY(-1deg);
+  padding-left: 10px;
+  cursor: default;
+  position: relative;
+  -webkit-text-stroke: 1px black;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+#mainNavbar .nav-link {
+  padding-bottom: 1px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  padding-left: 4px;
+  font-size: 1.6rem;
+  -webkit-text-stroke: 1px black;
+}
+
+#mainNavbar .nav-link:hover {
+  text-shadow: 0 0 3px #000000;
+}
+/****General Bootstrap Modal Styling****/
+
+.modal-content {
+  background-color: rgba(255, 255, 255, .75);
+  border: none;
+}
+
+.modal-backdrop {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#aboutModal .modal-body {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#Logo {
+  bottom: 25px;
+  right: 25px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 8px;
+  padding: 10px;
+  opacity: 0.85;
+}
+#titleDiv {
+  background-color: lightgray;
+  color: black;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  font-size: 20pt;
+  font-weight: bolder;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.infoTitle {
+  font-size: 2rem;
+  color: #303030;
+  font-weight: 900;
+}  
+
+.infoText {
+  font-size: .85rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 300;
+}
+
+.infoLink {
+  text-decoration: none;
+  color: #007646;
+  font-weight: 500;
+}
+
+.infoLink:hover {
+  color: #00C7C4;
+}
+
+/* PRELOADER CSS */
+.page-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(255, 255, 255,.6);
+  z-index: 1000;
+}
+
+/* Streetcar ANIMATION */
+
+#streetcar{
+  position: absolute;
+  animation: move 7s infinite alternate ease-in-out;
+  bottom: 2%;
+  
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}

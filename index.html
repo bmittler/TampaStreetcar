@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - TampaTrolleyDemoMap.js</title>
+  <link rel='stylesheet' href='https://js.arcgis.com/4.13/esri/themes/light/main.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="page-loader">
+  <img id="streetcar" src="https://assets.codepen.io/11049283/Trolley2.png">
+</div>
+
+<nav id="mainNavbar" class="navbar navbar-light navbar-expand-md px-3 py-0 fixed-top">
+  <a href="#" class="navbar-brand">Tampa Streetcar Map |</a>
+  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navLinks">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a href="#" id="about" class="nav-link" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container">
+          <div class="row pb-1">
+            <div class="col d-flex justify-content-between">
+              <span class="infoTitle">
+                <h3>About the Tampa Streetcar Map</h3>
+              </span>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="row text-start">
+            <div class="infoText">
+              <p>This application is part of a larger <a class="infoLink" href="#" target="_blank">Tampa Through Time</a> initiative that aims to make library collections more accessible by bringing them to light through a spatial lens. The map used for this project is a 1940 City of Tampa transit map depicting public transportation routes and is available for download through the <a class="infoLink" href="https://digitalcommons.usf.edu/digital_collections/" target="_blank">University of South Florida Digital Collections</a> webpage. </p>
+            </div>
+            <div class="infoText">
+
+              <div class="infoText">
+                <h6>Citation</h6>
+              </div>
+              <div class="infoText">
+                <p>MacDonald Printing Company, inc., Tampa, Fla., "Tampa, Florida" (1940). Hillsborough County and Tampa Map Collection. Image 8.<a class="infoLink" href="https://digitalcommons.usf.edu/fl_maps_local/8//" target="_blank">https://digitalcommons.usf.edu/fl_maps_local/8</a></p>
+              </div>
+
+              <div class="infoText">
+                <p>Created by <strong>Benjamin Mittler</strong>, GIS Manager, University of South Florida Libraries - Center for Digital Heritage and Geospatial Information</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Logo"><a href="https://dhhc.lib.usf.edu/" target="blank"><img src="https://assets.codepen.io/11049283/CDHGIlogo.png?format=auto" alt="logo" style="width:225px;height:75px;"></a></div>
+<div id="viewDiv" class="esri-widget">
+
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js'></script>
+<script src='https://js.arcgis.com/4.27/'></script><script  src="./script.js"></script>
+
+</body>
+</html>
