@@ -145,7 +145,7 @@ require([
         {
           type: "object",
           resource: {
-            href: "https://assets.codepen.io/11049283/ViewCollection.glb"
+            href: "./assets/ViewCollection.glb"
           },
           height: 550,
           heading: 315,
@@ -195,7 +195,7 @@ require([
         {
           type: "object",
           resource: {
-            href: "https://assets.codepen.io/11049283/DownloadHere.glb"
+            href: "./assets/DownloadHere.glb"
           },
           height: 550,
           heading: 300,
@@ -257,7 +257,7 @@ require([
         {
           type: "object",
           resource: {
-            href: "https://assets.codepen.io/11049283/tampastreetcar.glb"
+            href: "./assets/tampastreetcar.glb"
           },
           height: 140,
           heading: 180,
